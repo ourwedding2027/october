@@ -4,36 +4,398 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Laura & Peter | 9 October 2027</title>
+  <meta name="description" content="Laura and Peter wedding details, schedule, travel information, and RSVP." />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a href="../" class="logo">L & P</a>
-    <nav>
-      <a href="../hu/">Magyar</a>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="site-header" data-header>
+    <a href="../" class="logo">L&P</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primary-nav" class="main-nav" aria-label="Primary">
+      <a href="#story">Story</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#travel">Travel</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#music">Music</a>
+      <a href="rsvp/">RSVP</a>
+      <a href="../hu/" class="lang-switch">Magyar</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="main-content">
+    <section class="hero" data-reveal>
       <p class="eyebrow">Together with our families</p>
-      <h1>Laura<br>& Peter</h1>
-      <div class="divider"></div>
-      <p class="date">9 October 2027</p>
-      <p class="location">Northern Ireland</p>
+      <h1>Laura <span>&</span> Peter</h1>
+      <p class="lead">Saturday, 9 October 2027 · Glenavon Hotel, Cookstown</p>
       <p class="hero-text">
-        We are so excited to celebrate our wedding with the people we love most.
+        We cannot wait to celebrate with our favorite people. This page has all key details
+        for the weekend.
       </p>
+      <a class="cta-button" href="rsvp/">Confirm attendance</a>
+
+      <div class="countdown-grid" data-countdown="2027-10-09T14:00:00">
+        <article>
+          <p class="count" data-unit="days">0</p>
+          <p class="label">Days</p>
+        </article>
+        <article>
+          <p class="count" data-unit="hours">0</p>
+          <p class="label">Hours</p>
+        </article>
+        <article>
+          <p class="count" data-unit="minutes">0</p>
+          <p class="label">Minutes</p>
+        </article>
+        <article>
+          <p class="count" data-unit="seconds">0</p>
+          <p class="label">Seconds</p>
+        </article>
+      </div>
     </section>
 
-    <section class="content-section">
-      <p class="eyebrow">Welcome</p>
-      <h2>Our Wedding Weekend</h2>
-      <p>
-        This website will include everything you need for our wedding in Northern Ireland:
-        the schedule, venue details, travel information, accommodation, RSVP, and song requests.
-      </p>
+    <section id="story" class="section story-section">
+      <p class="eyebrow" data-reveal>Our story</p>
+      <h2 data-reveal>From first coffee to forever</h2>
+
+      <div class="story-timeline" aria-label="Our Story timeline">
+        <article class="story-item" data-reveal>
+          <img class="story-media" src="../images/story-1.svg" alt="Coffee date illustration" loading="lazy" />
+          <div class="story-content">
+            <p class="story-year">2019</p>
+            <h3>First meeting</h3>
+            <p>
+              A rainy Thursday, one coffee, and an unexpected six-hour conversation.
+            </p>
+          </div>
+        </article>
+
+        <article class="story-item" data-reveal>
+          <img class="story-media" src="../images/story-2.svg" alt="Travel memories illustration" loading="lazy" />
+          <div class="story-content">
+            <p class="story-year">2021</p>
+            <h3>Adventures together</h3>
+            <p>
+              We explored new cities, walked countless trails, and built a life full of stories.
+            </p>
+          </div>
+        </article>
+
+        <article class="story-item" data-reveal>
+          <img class="story-media" src="../images/story-3.svg" alt="Engagement moment illustration" loading="lazy" />
+          <div class="story-content">
+            <p class="story-year">2025</p>
+            <h3>The proposal</h3>
+            <p>
+              On a quiet evening by the coast, we said yes to forever.
+            </p>
+          </div>
+        </article>
+
+        <article class="story-item" data-reveal>
+          <img class="story-media" src="../images/story-4.svg" alt="Wedding planning illustration" loading="lazy" />
+          <div class="story-content">
+            <p class="story-year">2027</p>
+            <h3>Our wedding day</h3>
+            <p>
+              Now we are counting down to celebrating this next chapter with everyone we love.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="schedule" class="section" data-reveal>
+      <p class="eyebrow">The plan</p>
+      <h2>Wedding day timeline</h2>
+      <div class="timeline wedding-timeline" aria-label="Wedding day timeline">
+        <article class="wedding-event" data-reveal>
+          <div class="event-head">
+            <span class="event-time">14:00</span>
+            <h3>Ceremony</h3>
+            <span class="event-icon" aria-hidden="true"></span>
+          </div>
+          <p class="event-description">Guests arrive and we begin our ceremony at Glenavon Hotel, Cookstown.</p>
+        </article>
+        <article class="wedding-event" data-reveal>
+          <div class="event-head">
+            <span class="event-time">16:00</span>
+            <h3>Welcome drinks</h3>
+            <span class="event-icon" aria-hidden="true"></span>
+          </div>
+          <p class="event-description">Celebrate with cocktails and canapes on the Glenavon Hotel terrace.</p>
+        </article>
+        <article class="wedding-event" data-reveal>
+          <div class="event-head">
+            <span class="event-time">18:00</span>
+            <h3>Dinner & speeches</h3>
+            <span class="event-icon" aria-hidden="true"></span>
+          </div>
+          <p class="event-description">A three-course dinner and heartfelt speeches in the main ballroom.</p>
+        </article>
+        <article class="wedding-event" data-reveal>
+          <div class="event-head">
+            <span class="event-time">21:00</span>
+            <h3>Party starts</h3>
+            <span class="event-icon" aria-hidden="true"></span>
+          </div>
+          <p class="event-description">Live band, dancing, and late-night snacks to finish the night in style.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="travel" class="section" data-reveal>
+      <p class="eyebrow">Venue</p>
+      <h2>Glenavon Hotel, Cookstown</h2>
+
+      <div class="venue-section" data-reveal>
+        <img class="venue-image" src="../images/venue-hero.svg" alt="Glenavon Hotel editorial illustration" loading="lazy" />
+
+        <div class="venue-overview-card">
+          <h3>Venue information</h3>
+          <p>
+            Our full wedding day will be hosted at Glenavon Hotel, Cookstown. The ceremony,
+            dinner, and celebration are all in one location.
+          </p>
+          <a class="map-button" href="https://maps.google.com/?q=Glenavon%20Hotel%20Cookstown" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+        </div>
+
+        <div class="venue-cards">
+          <article>
+            <h3>Dress code</h3>
+            <p>Formal attire. Evening dresses, suits, and polished shoes are perfect.</p>
+          </article>
+          <article>
+            <h3>Parking</h3>
+            <p>Complimentary on-site parking is available for all wedding guests.</p>
+          </article>
+          <article>
+            <h3>Accessibility</h3>
+            <p>Step-free access, elevators, and accessible restrooms are available across the venue.</p>
+          </article>
+        </div>
+
+        <div class="travel-guide" data-reveal>
+          <p class="eyebrow">Guest travel guide</p>
+          <h3>Traveling to Cookstown</h3>
+          <div class="airport-grid">
+            <article class="airport-card">
+              <h4>Northern Ireland</h4>
+              <p class="airport-name">Belfast International Airport (BFS)</p>
+              <p>Best for most direct arrivals. Around 45 minutes by car to Glenavon Hotel.</p>
+              <p class="travel-tip">Advice: Book a shared taxi in advance for easier weekend transfers.</p>
+            </article>
+
+            <article class="airport-card">
+              <h4>Republic of Ireland</h4>
+              <p class="airport-name">Dublin Airport (DUB)</p>
+              <p>Ideal for wider flight options. Journey time is about 2.5 hours by car.</p>
+              <p class="travel-tip">Advice: Consider rental car or pre-booked coach for smooth border crossing.</p>
+            </article>
+
+            <article class="airport-card">
+              <h4>England</h4>
+              <p class="airport-name">Belfast City Airport (BHD)</p>
+              <p>Frequent short flights from major UK cities, then around 1 hour road transfer.</p>
+              <p class="travel-tip">Advice: Friday afternoon flights fill quickly, so reserve early.</p>
+            </article>
+
+            <article class="airport-card">
+              <h4>Hungary</h4>
+              <p class="airport-name">Belfast International via London or Dublin</p>
+              <p>Most routes connect through London airports or Dublin, then transfer to Cookstown.</p>
+              <p class="travel-tip">Advice: Choose flights with at least 2 hours layover for comfortable connections.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="hotel-guide" data-reveal>
+          <p class="eyebrow">Hotel recommendations</p>
+          <h3>Where to stay</h3>
+          <div class="hotel-grid">
+            <article class="hotel-card" data-reveal>
+              <h4>Glenavon Hotel (Recommended)</h4>
+              <p class="hotel-note">This is the wedding venue and discounted price is available.</p>
+              <p>
+                Please contact the reception directly and quote
+                <strong>Laura & Peter wedding, 9th October 2027</strong> when booking.
+              </p>
+              <a class="map-button" href="https://maps.google.com/?q=Glenavon%20Hotel%20Cookstown" target="_blank" rel="noopener noreferrer">View Glenavon on Google Maps</a>
+            </article>
+
+            <article class="hotel-card" data-reveal>
+              <h4>Alternative accommodation</h4>
+              <p>
+                Please contact Laura directly for alternatives. She has arranged a range of hotels
+                for guests flying in for the day.
+              </p>
+              <a class="map-button" href="https://maps.google.com/?q=Cookstown" target="_blank" rel="noopener noreferrer">View Cookstown area on Google Maps</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="music" class="section music-section" data-reveal>
+      <p class="eyebrow">Music requests</p>
+      <h2>Build our wedding playlist</h2>
+
+      <div class="music-layout" data-reveal>
+        <article class="spotify-card" aria-label="Spotify inspired music request card">
+          <p class="spotify-label">Now collecting</p>
+          <h3>Wedding dance floor picks</h3>
+          <p class="spotify-track">Song + Artist</p>
+          <p class="spotify-meta">Optional message for the couple</p>
+          <div class="spotify-progress" aria-hidden="true">
+            <span></span>
+          </div>
+        </article>
+
+        <div class="music-form-wrap">
+          <p class="music-form-intro">
+            Submit your song request using our Google Form backend. Please include
+            <strong>Song</strong>, <strong>Artist</strong>, and an optional message.
+          </p>
+          <iframe
+            title="Wedding music request Google Form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfMUSICFORMPLACEHOLDER/viewform?embedded=true"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section" data-reveal>
+      <p class="eyebrow">Gallery</p>
+      <h2>Moments we love</h2>
+      <div class="masonry-grid" data-reveal>
+        <a class="masonry-item" href="../images/gallery-1.svg" data-lightbox="gallery" data-caption="Garden lights">
+          <img src="../images/gallery-1.svg" alt="Garden lights editorial frame" loading="lazy" />
+        </a>
+        <a class="masonry-item" href="../images/gallery-2.svg" data-lightbox="gallery" data-caption="Floral stationery">
+          <img src="../images/gallery-2.svg" alt="Floral stationery frame" loading="lazy" />
+        </a>
+        <a class="masonry-item" href="../images/gallery-3.svg" data-lightbox="gallery" data-caption="Champagne toast">
+          <img src="../images/gallery-3.svg" alt="Champagne toast frame" loading="lazy" />
+        </a>
+        <a class="masonry-item" href="../images/gallery-4.svg" data-lightbox="gallery" data-caption="Evening dance">
+          <img src="../images/gallery-4.svg" alt="Evening dance frame" loading="lazy" />
+        </a>
+        <a class="masonry-item" href="../images/gallery-5.svg" data-lightbox="gallery" data-caption="Ceremony aisle">
+          <img src="../images/gallery-5.svg" alt="Ceremony aisle frame" loading="lazy" />
+        </a>
+        <a class="masonry-item" href="../images/gallery-6.svg" data-lightbox="gallery" data-caption="Reception details">
+          <img src="../images/gallery-6.svg" alt="Reception detail frame" loading="lazy" />
+        </a>
+      </div>
+    </section>
+
+    <section id="rsvp" class="section" data-reveal>
+      <p class="eyebrow">Let us know</p>
+      <h2>RSVP & song request</h2>
+      <form class="rsvp-form" data-rsvp-form>
+        <label>
+          Full name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Will you attend?
+          <select name="attending" required>
+            <option value="">Please choose</option>
+            <option>Yes, with joy</option>
+            <option>Sadly no</option>
+          </select>
+        </label>
+        <label>
+          Number of guests
+          <input type="number" name="guests" min="1" max="4" value="1" />
+        </label>
+        <label>
+          Dietary notes
+          <input type="text" name="diet" placeholder="Vegetarian, allergies, etc." />
+        </label>
+        <label>
+          Song request
+          <input type="text" name="song" placeholder="Track + artist" />
+        </label>
+        <label>
+          Message for us
+          <textarea name="message" rows="4"></textarea>
+        </label>
+        <button type="submit" class="cta-button">Send RSVP</button>
+        <p class="form-feedback" data-form-feedback aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="faq" class="section faq-section" data-reveal>
+      <p class="eyebrow">FAQ</p>
+      <h2>Frequently asked questions</h2>
+
+      <div class="faq-accordion" data-accordion>
+        <article class="faq-item">
+          <h3>
+            <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-en-1" id="faq-en-trigger-1">
+              What time should we arrive?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <section class="faq-panel" id="faq-en-1" aria-labelledby="faq-en-trigger-1">
+            <div class="faq-content">
+              <p>Please arrive by 13:30 so everyone is seated before the 14:00 ceremony.</p>
+            </div>
+          </section>
+        </article>
+
+        <article class="faq-item">
+          <h3>
+            <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-en-2" id="faq-en-trigger-2">
+              Can I bring children?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <section class="faq-panel" id="faq-en-2" aria-labelledby="faq-en-trigger-2">
+            <div class="faq-content">
+              <p>Yes, children are welcome. Please include them in your RSVP guest count.</p>
+            </div>
+          </section>
+        </article>
+
+        <article class="faq-item">
+          <h3>
+            <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-en-3" id="faq-en-trigger-3">
+              Is there parking at the venue?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <section class="faq-panel" id="faq-en-3" aria-labelledby="faq-en-trigger-3">
+            <div class="faq-content">
+              <p>Yes. Glenavon Hotel offers complimentary on-site parking for wedding guests.</p>
+            </div>
+          </section>
+        </article>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer lux-footer">
+    <div class="botanical-divider" aria-hidden="true"></div>
+    <p class="footer-couple">Laura & Peter</p>
+    <p class="footer-date">9 October 2027</p>
+    <p class="footer-links">
+      <a href="../hu/">Magyar</a>
+      <a href="https://instagram.com/lauraandpeterwedding" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="mailto:hello@laura-peter.wedding">Email</a>
+    </p>
+    <p class="footer-copy">&copy; <span data-year></span> Laura & Peter</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
 </body>
 </html>

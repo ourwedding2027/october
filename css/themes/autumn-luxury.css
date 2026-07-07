@@ -1,0 +1,45 @@
+:root {
+  --ivory: #f8efe0;
+  --cream: #ecdfc9;
+  --deep-green: #1a2a21;
+  --sage: #7f8e81;
+  --eucalyptus: #617062;
+  --merlot: #5d1527;
+  --berry: #7f2137;
+  --brass: #9e7b3f;
+  --gold: #c6a366;
+  --ink: #202720;
+  --muted: #5e665d;
+  --white: #fffaf2;
+  --surface: rgba(255, 247, 236, 0.86);
+  --line: rgba(158, 123, 63, 0.36);
+  --soft-shadow: 0 16px 32px rgba(22, 30, 25, 0.12);
+}
+
+body {
+  background:
+    radial-gradient(880px 460px at 9% 12%, rgba(93, 21, 39, 0.18), transparent 66%),
+    radial-gradient(900px 560px at 92% 92%, rgba(26, 42, 33, 0.24), transparent 70%),
+    linear-gradient(150deg, var(--ivory), var(--cream));
+}
+
+.hero-fullscreen::before {
+  background:
+    radial-gradient(150px 240px at 12% 20%, rgba(127, 142, 129, 0.25), transparent 66%),
+    radial-gradient(180px 260px at 84% 16%, rgba(93, 21, 39, 0.25), transparent 70%),
+    radial-gradient(170px 250px at 18% 82%, rgba(26, 42, 33, 0.2), transparent 70%),
+    radial-gradient(140px 210px at 84% 80%, rgba(127, 33, 55, 0.22), transparent 66%);
+}
+
+.site-header.is-scrolled {
+  background: color-mix(in srgb, var(--ivory) 92%, transparent);
+}
+
+.spotify-card {
+  background: linear-gradient(150deg, #0f2018, #183127 58%, #102219);
+  border-color: rgba(126, 142, 128, 0.52);
+}
+
+.spotify-progress span {
+  background: linear-gradient(90deg, #89b894, #c6a366);
+}

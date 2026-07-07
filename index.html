@@ -4,27 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Laura & Peter | Wedding</title>
+  <meta name="description" content="Choose your language for Laura and Peter's wedding website." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-  <main class="landing">
-    <div class="card">
-      <p class="eyebrow">You are warmly invited to celebrate</p>
-
-      <h1>Laura & Peter</h1>
-
-      <div class="divider"></div>
-
-      <p class="date">9 October 2027</p>
-      <p class="location">Northern Ireland</p>
-
-      <p class="intro">Please choose your language</p>
-
-      <div class="language-buttons">
-        <a href="en/" class="button">English</a>
-        <a href="hu/" class="button">Magyar</a>
+<body class="landing-body">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <div class="invitation-overlay" data-invitation-overlay>
+    <div class="invitation-envelope" aria-hidden="true">
+      <div class="invitation-lid"></div>
+      <div class="invitation-paper" data-invitation-paper>
+        <p class="eyebrow">You are invited</p>
+        <h2>Laura <span>&</span> Peter</h2>
+        <p class="invitation-date">9 October 2027</p>
+        <p class="invitation-place">Northern Ireland</p>
+        <button type="button" class="invitation-open" data-open-invitation>Open Invitation</button>
       </div>
     </div>
+  </div>
+
+  <main id="main-content" class="landing-shell site-underlay" data-site-underlay>
+    <section class="hero-fullscreen" aria-labelledby="hero-title">
+      <p class="eyebrow">Welcome to our wedding website</p>
+      <h1 id="hero-title">Laura <span>&</span> Peter</h1>
+      <p class="hero-date">9 October 2027</p>
+      <p class="hero-location">Northern Ireland</p>
+      <a href="en/" class="hero-cta">Begin our story</a>
+    </section>
   </main>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

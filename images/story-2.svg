@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title2 desc2">
+  <title id="title2">Travel memory botanical illustration</title>
+  <desc id="desc2">Soft botanical abstract forms in sage and merlot colors.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbf7ef"/>
+      <stop offset="100%" stop-color="#f3eadc"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg2)"/>
+  <ellipse cx="620" cy="120" rx="130" ry="90" fill="#8fa58b" fill-opacity="0.3"/>
+  <ellipse cx="180" cy="380" rx="160" ry="105" fill="#6e1f2f" fill-opacity="0.2"/>
+  <path d="M200 120c60 90 160 150 360 190" stroke="#203b2d" stroke-opacity="0.3" stroke-width="3" fill="none"/>
+  <path d="M520 320c-60 40-130 58-210 60" stroke="#203b2d" stroke-opacity="0.22" stroke-width="2" fill="none"/>
+  <circle cx="430" cy="238" r="7" fill="#b08a4a"/>
+  <circle cx="470" cy="256" r="6" fill="#d3b878"/>
+</svg>

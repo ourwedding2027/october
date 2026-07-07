@@ -1,39 +1,401 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="hu">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Laura és Peter | 2027. október 9.</title>
+  <meta name="description" content="Laura és Peter esküvői információk, program, utazás és visszajelzés." />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a href="../" class="logo">L & P</a>
-    <nav>
-      <a href="../en/">English</a>
+  <a href="#main-content" class="skip-link">Ugrás a tartalomra</a>
+  <header class="site-header" data-header>
+    <a href="../" class="logo">L&P</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menü nyitása">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primary-nav" class="main-nav" aria-label="Elsődleges">
+      <a href="#story">Sztori</a>
+      <a href="#schedule">Program</a>
+      <a href="#travel">Utazás</a>
+      <a href="#gallery">Galéria</a>
+      <a href="#music">Zene</a>
+      <a href="rsvp/">Visszajelzés</a>
+      <a href="../en/" class="lang-switch">English</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="main-content">
+    <section class="hero" data-reveal>
       <p class="eyebrow">Családjainkkal együtt</p>
-      <h1>Laura<br>és Peter</h1>
-      <div class="divider"></div>
-      <p class="date">2027. október 9.</p>
-      <p class="location">Észak-Írország</p>
+      <h1>Laura <span>és</span> Peter</h1>
+      <p class="lead">2027. október 9., szombat · Glenavon Hotel, Cookstown</p>
       <p class="hero-text">
-        Nagyon várjuk, hogy azokkal ünnepelhessük az esküvőnket, akiket a legjobban szeretünk.
+        Alig várjuk, hogy a kedvenc embereinkkel ünnepelhessünk. Ezen az oldalon minden
+        fontos információt megtaláltok a hétvégéhez.
       </p>
+      <a class="cta-button" href="rsvp/">Visszajelzek</a>
+
+      <div class="countdown-grid" data-countdown="2027-10-09T14:00:00">
+        <article>
+          <p class="count" data-unit="days">0</p>
+          <p class="label">Nap</p>
+        </article>
+        <article>
+          <p class="count" data-unit="hours">0</p>
+          <p class="label">Óra</p>
+        </article>
+        <article>
+          <p class="count" data-unit="minutes">0</p>
+          <p class="label">Perc</p>
+        </article>
+        <article>
+          <p class="count" data-unit="seconds">0</p>
+          <p class="label">Másodperc</p>
+        </article>
+      </div>
     </section>
 
-    <section class="content-section">
-      <p class="eyebrow">Üdvözlünk</p>
-      <h2>Az esküvői hétvégénk</h2>
-      <p>
-        Ezen az oldalon minden fontos információt megtaláltok az észak-írországi esküvőnkről:
-        program, helyszín, utazás, szállás, visszajelzés és zenekérés.
-      </p>
+    <section id="story" class="section story-section">
+      <p class="eyebrow" data-reveal>A mi történetünk</p>
+      <h2 data-reveal>Az első kávétól az örökkéig</h2>
+
+      <div class="story-timeline" aria-label="A mi történetünk idővonal">
+        <article class="story-item" data-reveal>
+          <img class="story-media" src="../images/story-1.svg" alt="Első randi illusztráció" loading="lazy" />
+          <div class="story-content">
+            <p class="story-year">2019</p>
+            <h3>Első találkozás</h3>
+            <p>
+              Egy esős csütörtök, egy kávé, és egy hatórás beszélgetés.
+            </p>
+          </div>
+        </article>
+
+        <article class="story-item" data-reveal>
+          <img class="story-media" src="../images/story-2.svg" alt="Közös utazások illusztráció" loading="lazy" />
+          <div class="story-content">
+            <p class="story-year">2021</p>
+            <h3>Közös kalandok</h3>
+            <p>
+              Új városokat fedeztünk fel, sokat túráztunk, és rengeteg emléket gyűjtöttünk.
+            </p>
+          </div>
+        </article>
+
+        <article class="story-item" data-reveal>
+          <img class="story-media" src="../images/story-3.svg" alt="Lánykérés illusztráció" loading="lazy" />
+          <div class="story-content">
+            <p class="story-year">2025</p>
+            <h3>Lánykérés</h3>
+            <p>
+              Egy csendes tengerparti estén kimondtuk az igen szót.
+            </p>
+          </div>
+        </article>
+
+        <article class="story-item" data-reveal>
+          <img class="story-media" src="../images/story-4.svg" alt="Esküvői készülődés illusztráció" loading="lazy" />
+          <div class="story-content">
+            <p class="story-year">2027</p>
+            <h3>Az esküvő napja</h3>
+            <p>
+              Már számoljuk vissza a napokat, hogy veletek ünnepelhessünk.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="schedule" class="section" data-reveal>
+      <p class="eyebrow">A terv</p>
+      <h2>Esküvői menetrend</h2>
+      <div class="timeline wedding-timeline" aria-label="Esküvő napja idővonal">
+        <article class="wedding-event" data-reveal>
+          <div class="event-head">
+            <span class="event-time">14:00</span>
+            <h3>Szertartás</h3>
+            <span class="event-icon" aria-hidden="true"></span>
+          </div>
+          <p class="event-description">Érkezés után kezdődik a szertartás a Glenavon Hotelben, Cookstownban.</p>
+        </article>
+        <article class="wedding-event" data-reveal>
+          <div class="event-head">
+            <span class="event-time">16:00</span>
+            <h3>Köszöntő italok</h3>
+            <span class="event-icon" aria-hidden="true"></span>
+          </div>
+          <p class="event-description">Ünneplés italokkal és falatokkal a Glenavon Hotel teraszán.</p>
+        </article>
+        <article class="wedding-event" data-reveal>
+          <div class="event-head">
+            <span class="event-time">18:00</span>
+            <h3>Vacsora és köszöntők</h3>
+            <span class="event-icon" aria-hidden="true"></span>
+          </div>
+          <p class="event-description">Háromfogásos vacsora és köszöntők a fő balteremben.</p>
+        </article>
+        <article class="wedding-event" data-reveal>
+          <div class="event-head">
+            <span class="event-time">21:00</span>
+            <h3>Buli</h3>
+            <span class="event-icon" aria-hidden="true"></span>
+          </div>
+          <p class="event-description">Élő zene, tánc és éjszakai falatok hajnalig.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="travel" class="section" data-reveal>
+      <p class="eyebrow">Helyszín</p>
+      <h2>Glenavon Hotel, Cookstown</h2>
+
+      <div class="venue-section" data-reveal>
+        <img class="venue-image" src="../images/venue-hero.svg" alt="Glenavon Hotel illusztráció" loading="lazy" />
+
+        <div class="venue-overview-card">
+          <h3>Helyszín információ</h3>
+          <p>
+            Az egész esküvői napunk a Glenavon Hotelben lesz: szertartás, vacsora és ünneplés
+            egy helyszínen.
+          </p>
+          <a class="map-button" href="https://maps.google.com/?q=Glenavon%20Hotel%20Cookstown" target="_blank" rel="noopener noreferrer">Google Maps megnyitása</a>
+        </div>
+
+        <div class="venue-cards">
+          <article>
+            <h3>Dress code</h3>
+            <p>Formális viselet ajánlott: elegáns ruha, öltöny és alkalmi cipő.</p>
+          </article>
+          <article>
+            <h3>Parkolás</h3>
+            <p>Ingyenes helyszíni parkolás áll rendelkezésre minden vendégünknek.</p>
+          </article>
+          <article>
+            <h3>Akadálymentesség</h3>
+            <p>Lépcsőmentes bejutás, lift és akadálymentes mosdók is elérhetők.</p>
+          </article>
+        </div>
+
+        <div class="travel-guide" data-reveal>
+          <p class="eyebrow">Utazási kisokos</p>
+          <h3>Érkezés Cookstownba</h3>
+          <div class="airport-grid">
+            <article class="airport-card">
+              <h4>Észak-Írország</h4>
+              <p class="airport-name">Belfast International Airport (BFS)</p>
+              <p>A legtöbb vendégnek ez a legegyszerűbb opció. Autóval kb. 45 perc a helyszín.</p>
+              <p class="travel-tip">Tipp: Érdemes előre közös taxit foglalni a hétvégére.</p>
+            </article>
+
+            <article class="airport-card">
+              <h4>Ír Köztársaság</h4>
+              <p class="airport-name">Dublin Airport (DUB)</p>
+              <p>Több járat miatt kényelmes választás. Az út kb. 2.5 óra autóval.</p>
+              <p class="travel-tip">Tipp: Bérautó vagy előre szervezett transzfer ajánlott.</p>
+            </article>
+
+            <article class="airport-card">
+              <h4>Anglia</h4>
+              <p class="airport-name">Belfast City Airport (BHD)</p>
+              <p>Gyakori rövid járatok UK városokból, majd kb. 1 órás közúti transzfer.</p>
+              <p class="travel-tip">Tipp: A pénteki járatok gyorsan betelnek, foglaljatok időben.</p>
+            </article>
+
+            <article class="airport-card">
+              <h4>Magyarország</h4>
+              <p class="airport-name">Belfast International, átszállással</p>
+              <p>Jellemzően londoni vagy dublini átszállással érdemes tervezni.</p>
+              <p class="travel-tip">Tipp: Válasszatok legalább 2 órás átszállási időt a nyugodt érkezéshez.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="hotel-guide" data-reveal>
+          <p class="eyebrow">Szállás ajánlások</p>
+          <h3>Hol szálljatok meg</h3>
+          <div class="hotel-grid">
+            <article class="hotel-card" data-reveal>
+              <h4>Glenavon Hotel (Ajánlott)</h4>
+              <p class="hotel-note">Ez a helyszínünk, és kedvezményes ár elérhető.</p>
+              <p>
+                Foglaláshoz kérjük, közvetlenül a recepciót keressétek, és mondjátok:
+                <strong>Laura & Peter wedding, 9th October 2027</strong>.
+              </p>
+              <a class="map-button" href="https://maps.google.com/?q=Glenavon%20Hotel%20Cookstown" target="_blank" rel="noopener noreferrer">Glenavon megnyitása Google Maps-ben</a>
+            </article>
+
+            <article class="hotel-card" data-reveal>
+              <h4>Alternatív szállások</h4>
+              <p>
+                Kérjük, vegyétek fel Laurával közvetlenül a kapcsolatot. Több hotelt is lefoglalt
+                a repülővel érkező vendégek számára.
+              </p>
+              <a class="map-button" href="https://maps.google.com/?q=Cookstown" target="_blank" rel="noopener noreferrer">Cookstown térség megnyitása Google Maps-ben</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="music" class="section music-section" data-reveal>
+      <p class="eyebrow">Zenekérés</p>
+      <h2>Építsetek velünk a playlistet</h2>
+
+      <div class="music-layout" data-reveal>
+        <article class="spotify-card" aria-label="Spotify stílusú zenekérő kártya">
+          <p class="spotify-label">Most gyűjtjük</p>
+          <h3>Esküvői bulis számok</h3>
+          <p class="spotify-track">Dal + Előadó</p>
+          <p class="spotify-meta">Opcionális üzenet nekünk</p>
+          <div class="spotify-progress" aria-hidden="true">
+            <span></span>
+          </div>
+        </article>
+
+        <div class="music-form-wrap">
+          <p class="music-form-intro">
+            Küldd be zenekérésed Google Formon keresztül. Kérjük add meg a
+            <strong>Dalt</strong>, az <strong>Előadót</strong>, és opcionálisan egy üzenetet.
+          </p>
+          <iframe
+            title="Zenekérés Google Form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfMUSICFORMPLACEHOLDER/viewform?embedded=true"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section" data-reveal>
+      <p class="eyebrow">Galéria</p>
+      <h2>Kedvenc pillanataink</h2>
+      <div class="masonry-grid" data-reveal>
+        <a class="masonry-item" href="../images/gallery-1.svg" data-lightbox="gallery" data-caption="Fénypontok a kertben">
+          <img src="../images/gallery-1.svg" alt="Kerti fények editorial kép" loading="lazy" />
+        </a>
+        <a class="masonry-item" href="../images/gallery-2.svg" data-lightbox="gallery" data-caption="Virágos papírvilág">
+          <img src="../images/gallery-2.svg" alt="Virágos papírvilág kép" loading="lazy" />
+        </a>
+        <a class="masonry-item" href="../images/gallery-3.svg" data-lightbox="gallery" data-caption="Köszöntő koccintás">
+          <img src="../images/gallery-3.svg" alt="Koccintás kép" loading="lazy" />
+        </a>
+        <a class="masonry-item" href="../images/gallery-4.svg" data-lightbox="gallery" data-caption="Esti tánc">
+          <img src="../images/gallery-4.svg" alt="Esti tánc kép" loading="lazy" />
+        </a>
+        <a class="masonry-item" href="../images/gallery-5.svg" data-lightbox="gallery" data-caption="Szertartás folyosója">
+          <img src="../images/gallery-5.svg" alt="Szertartás folyosója kép" loading="lazy" />
+        </a>
+        <a class="masonry-item" href="../images/gallery-6.svg" data-lightbox="gallery" data-caption="Recepció részletek">
+          <img src="../images/gallery-6.svg" alt="Recepció részletek kép" loading="lazy" />
+        </a>
+      </div>
+    </section>
+
+    <section id="rsvp" class="section" data-reveal>
+      <p class="eyebrow">Jelzés</p>
+      <h2>Visszajelzés és zenekérés</h2>
+      <form class="rsvp-form" data-rsvp-form>
+        <label>
+          Teljes név
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Jöttök?
+          <select name="attending" required>
+            <option value="">Kérlek válassz</option>
+            <option>Igen, örömmel</option>
+            <option>Sajnos nem</option>
+          </select>
+        </label>
+        <label>
+          Vendégszám
+          <input type="number" name="guests" min="1" max="4" value="1" />
+        </label>
+        <label>
+          Étkezés megjegyzés
+          <input type="text" name="diet" placeholder="Vegetáriánus, allergia, stb." />
+        </label>
+        <label>
+          Zenekérés
+          <input type="text" name="song" placeholder="Cím + előadó" />
+        </label>
+        <label>
+          Üzenet nekünk
+          <textarea name="message" rows="4"></textarea>
+        </label>
+        <button type="submit" class="cta-button">Küldés</button>
+        <p class="form-feedback" data-form-feedback aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="faq" class="section faq-section" data-reveal>
+      <p class="eyebrow">GYIK</p>
+      <h2>Gyakran ismételt kérdések</h2>
+
+      <div class="faq-accordion" data-accordion>
+        <article class="faq-item">
+          <h3>
+            <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-hu-1" id="faq-hu-trigger-1">
+              Mikorra érkezzünk?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <section class="faq-panel" id="faq-hu-1" aria-labelledby="faq-hu-trigger-1">
+            <div class="faq-content">
+              <p>Kérjük, 13:30-ra érkezzetek, hogy a 14:00-kor kezdődő szertartásra mindenki helyet foglaljon.</p>
+            </div>
+          </section>
+        </article>
+
+        <article class="faq-item">
+          <h3>
+            <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-hu-2" id="faq-hu-trigger-2">
+              Jöhetnek gyerekek is?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <section class="faq-panel" id="faq-hu-2" aria-labelledby="faq-hu-trigger-2">
+            <div class="faq-content">
+              <p>Igen, szeretettel várjuk a gyerekeket is. Kérjük, jelezzétek őket is a visszajelzésben.</p>
+            </div>
+          </section>
+        </article>
+
+        <article class="faq-item">
+          <h3>
+            <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-hu-3" id="faq-hu-trigger-3">
+              Van parkolás a helyszínen?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <section class="faq-panel" id="faq-hu-3" aria-labelledby="faq-hu-trigger-3">
+            <div class="faq-content">
+              <p>Igen, a Glenavon Hotel ingyenes helyszíni parkolást biztosít a vendégeknek.</p>
+            </div>
+          </section>
+        </article>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer lux-footer">
+    <div class="botanical-divider" aria-hidden="true"></div>
+    <p class="footer-couple">Laura & Peter</p>
+    <p class="footer-date">2027. október 9.</p>
+    <p class="footer-links">
+      <a href="../en/">English</a>
+      <a href="https://instagram.com/lauraandpeterwedding" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="mailto:hello@laura-peter.wedding">Email</a>
+    </p>
+    <p class="footer-copy">&copy; <span data-year></span> Laura & Peter</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
 </body>
 </html>

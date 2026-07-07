@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title4 desc4">
+  <title id="title4">Wedding day botanical illustration</title>
+  <desc id="desc4">Botanical editorial composition with forest green and brass accents.</desc>
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbf7ef"/>
+      <stop offset="100%" stop-color="#f3eadc"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg4)"/>
+  <ellipse cx="640" cy="140" rx="150" ry="95" fill="#6f8273" fill-opacity="0.26"/>
+  <ellipse cx="180" cy="360" rx="170" ry="112" fill="#6e1f2f" fill-opacity="0.18"/>
+  <path d="M220 140c90 130 170 200 360 250" stroke="#203b2d" stroke-opacity="0.28" stroke-width="3" fill="none"/>
+  <circle cx="430" cy="288" r="8" fill="#b08a4a"/>
+  <circle cx="468" cy="305" r="7" fill="#d3b878"/>
+  <circle cx="506" cy="322" r="5" fill="#b08a4a"/>
+</svg>
